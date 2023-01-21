@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // const io = socketio(server);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://incandescent-halva-7330f8.netlify.app/",
     methods: ["GET", "POST"],
   },
 });
