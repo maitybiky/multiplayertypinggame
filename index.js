@@ -40,8 +40,8 @@ io.on("connection", (socket) => {
 
   socket.on("disconnect", (socket) => {
     users = {};
-    //  socket.broadcast.emit("userLeft");
-    console.log("connected -");
+      io.emit("dis", "oponent  has left");
+    console.log("connected -,");
   });
 });
 
